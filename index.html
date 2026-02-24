@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <h2>Formulario de Producto</h2>
+
+    <form action="" method="get" class="form-container" id="productoForm">
+        <div class="form-group">
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" placeholder="Ingrese el nombre" required minlength="3" maxlength="20">
+        </div>
+
+
+
+    <div class="form-group">
+        <label for="precio">Precio (COP)</label>
+        <input type="number"  id="precio" placeholder="Ingrese el precio" required min="1" max="100000000">
+    </div>
+    
+
+    <div class="form-group">
+        <label for="marca">Marca</label>
+        <input type="text"  id="marca" placeholder="Ingrese la marca" required>
+    </div>
+
+         <div class="form-group">
+         <label for="categoria">Categoria</label>
+        <select id="categoria" required>
+            <option value="">Seleccione una categoria</option>
+            <option value="electronica">Electronica</option>
+            <option value="ropa">Ropa</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div>
+
+
+    <div class="form-group full-width">
+    <label for="descripcion">Descripcion:</label>
+    <textarea id="descripcion" placeholder="Ingrese la descripcion" required></textarea>
+
+    </div>
+
+    <div class="form-group full-width">
+        <label for="imagen">Imagen del Producto:</label>
+        <input type="file" id="imagen" accept="image/*" required>
+        <img class="preview-img" id="previewImg" alt="Vista previa">
+    </div>
+
+    <div class="button-container">
+        <button id="btnAgregar" type="submit">Registrar Producto</button>
+
+
+
+    </div>
+    </form>
+    
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Formulario PQRS</h2>
+
+    <form action="" method="get" class="form-container" id="productoForm">
+        <div class="form-group">
+        <label for="nombre">Nombre de la empresa:</label>
+        <input type="text" id="nombre" placeholder="Ingrese el nombre" required minlength="3" maxlength="20">
+        </div>
+
+
+
+    <div class="form-group">
+        <label for="NIT">NIT</label>
+        <input type="number"  id="precio" placeholder="Ingrese el NIT" required min="1" max="999999999">
+    </div>
+    
+
+    <div class="form-group">
+        <label for="direccion">direccion</label>
+        <input type="text"  id="marca" placeholder="Ingrese la direccion" required>
+    </div>
+
+         <div class="form-group">
+         <label for="categoria">Categoria</label>
+        <select id="categoria" required>
+            <option value="">Seleccione una categoria</option>
+            <option value="electronica">Electronica</option>
+            <option value="ropa">Ropa</option>
+            <option value ="salsamentaria">Salsamentaria</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div>
+
+
+    <div class="form-group full-width">
+    <label for="PQRS">PQRS:</label>
+    <textarea id="descripcion" placeholder="Ingrese su PQRS" required></textarea>
+
+    </div>
+
+    <div class="form-group full-width">
+        <label for="imagen">Imagen del Producto:</label>
+        <input type="file" id="imagen" accept="image/*" required>
+        <img class="preview-img" id="previewImg" alt="Vista previa">
+    </div>
+
+    <div class="button-container">
+        <button id="btnAgregar" type="submit">Registrar Producto</button>
+
+
+
+    </div>
+    </form>
+</div>
+
+<script src="js/formulario.js"></script>
+    
+    
+</body>
+</html>

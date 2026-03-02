@@ -50,9 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
       let direccion = document.getElementById("direccion").value.trim();
       let correo = document.getElementById("correo").value.trim();
       let tipo = tipoSelect.value.trim();
+      let descripcion = document.getElementById("descripcion").value.trim();
 
       // VALIDACIÓN DE CAMPOS VACÍOS
-      if (!nombre || !nit || !direccion || !correo || !tipo){
+      if (!nombre || !nit || !direccion || !correo || !tipo || !descripcion){
           alert("Por favor, completa todos los campos.");
           return;
       }
@@ -75,7 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
           nit,
           direccion,
           correo,
-          tipo: tipo === "otros" ? otraCategoriaInput.value.trim() : tipo,
+          tipo: tipo === "otros" ? otroTipoInput.value.trim() : tipo,
+          descripcion,
           imagen: previewImg.src
       });
 

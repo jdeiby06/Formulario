@@ -92,3 +92,21 @@ button:hover {
 .oculto{
     display: none;
 }  
+
+.volver-sitio{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(130deg,rgb(21, 100, 26),rgb(4, 6, 136));
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    transition: background 0.3 ease;
+}
+.volver-sitio:hover {
+    background: linear-gradient(130deg,rgb(0, 60, 255),rgb(55, 209, 163));
+}

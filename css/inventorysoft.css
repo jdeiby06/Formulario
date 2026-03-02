@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    min-height: 100vh;
     background: linear-gradient(130deg,rgb(83, 223, 125),rgb(15, 75, 240));
     padding: 20px;
 }
@@ -20,6 +20,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     width: 100%;
     max-width: 600px;
+    
     
     
 }

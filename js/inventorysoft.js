@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       localStorage.setItem("reportes", JSON.stringify(reportes));
-      alert("Reporte guardado en localStorage ✅");
+      alert("Reporte guardado en localStorage ✅ Gracias por tu colaboración, nuestro equipo te contactara por medio del correo para ayudarte con tu problema.");
       location.reload();
   });
 

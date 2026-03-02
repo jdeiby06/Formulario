@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/inventorysoft.css">
 </head>
 <body>
-    <div class="container">
-    <h2>Formulario PQRS</h2>
 
-    <form action="" method="get" class="form-container" id="productoForm">
+    <div class="container">
+    <h2>Formulario para el reporte de errores</h2>
+
+    <form action="" method="get" class="form-container" id="reporteForm">
         <div class="form-group">
-        <label for="nombre">Nombre de la empresa:</label>
+        <label for="nombre">Nombre de la empresa</label>
         <input type="text" id="nombre" placeholder="Ingrese el nombre" required minlength="3" maxlength="20">
         </div>
 
@@ -20,41 +21,56 @@
 
     <div class="form-group">
         <label for="NIT">NIT</label>
-        <input type="number"  id="precio" placeholder="Ingrese el NIT" required min="1" max="999999999">
+        <input type="number"  id="nit" placeholder="Ingrese el NIT" required min="1" max="999999999"> 
     </div>
     
 
     <div class="form-group">
-        <label for="direccion">direccion</label>
-        <input type="text"  id="marca" placeholder="Ingrese la direccion" required>
+        <label for="direccion">Direccion</label>
+        <input type="text"  id="direccion" placeholder="Ingrese la direccion" required>
+    </div>
+
+    <div class="form-group">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" placeholder="Ingrese su correo electrónico" required>
     </div>
 
          <div class="form-group">
-         <label for="categoria">Categoria</label>
-        <select id="categoria" required>
-            <option value="">Seleccione una categoria</option>
-            <option value="electronica">Electronica</option>
-            <option value="ropa">Ropa</option>
-            <option value ="salsamentaria">Salsamentaria</option>
+         <label for="tipo">Tipo de problema</label>
+        <select id="tipo" required>
+            <option value="">Seleccione el tipo de problema</option>
+            <option value="crasheos">Crasheos</option>
+            <option value="datos">Registro de informacion</option>
+            <option value ="visual">Errores visuales</option>
             <option value="otros">Otros</option>
         </select>
     </div>
 
+    
+
+
+
+
+<div id="otroTipoContainer" class="form-group full-width oculto">
+  <label for="otroTipo">Especifique el tipo de problema</label>
+  <input type="text" id="otroTipo" placeholder="Escriba el tipo de problema">
+</div>
+    
 
     <div class="form-group full-width">
     <label for="PQRS">PQRS:</label>
-    <textarea id="descripcion" placeholder="Ingrese su PQRS" required></textarea>
+    <textarea id="descripcion" placeholder="Ingrese la descripcion del problema que presenta el software" required></textarea>
 
     </div>
 
     <div class="form-group full-width">
-        <label for="imagen">Imagen del Producto:</label>
+        <label for="imagen">Imagen del error</label>
         <input type="file" id="imagen" accept="image/*" required>
         <img class="preview-img" id="previewImg" alt="Vista previa">
     </div>
 
     <div class="button-container">
-        <button id="btnAgregar" type="submit">Registrar Producto</button>
+        <button id="btnAgregar" type="submit">Reportar</button>
 
 
 
@@ -62,7 +78,7 @@
     </form>
 </div>
 
-<script src="js/formulario.js"></script>
+<script src="js/inventorysoft.js"></script>
     
     
 </body>

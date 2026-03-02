@@ -21,7 +21,7 @@ document.getElementById("productoForm").addEventListener("submit", function(even
     event.preventDefault(); //Evita el envio del formulario y la recarga de la pagina
 
     let nombre = document.getElementById("nombre").value.trim();
-    let precio = document.getElementById("precio").value.trim();
+    let precio = document.getElementById("nit").value.trim();
     let categoria = document.getElementById("categoria").value;
     let imagenInput = document.getElementById("imagen");
     let imagen = document.getElementById("previewImg").src;

@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   // Se tuvo que modificar el codigo para que se adapte a los cambios realizados en el html, mas que todo por la adiccion del cuadro de texto para la categoria "otros".
-  let categoriaSelect = document.getElementById("categoria");
-  let otraCategoriaContainer = document.getElementById("otraCategoriaContainer");
-  let otraCategoriaInput = document.getElementById("otraCategoria");
+  let tipoSelect = document.getElementById("tipo");
+  let otroTipoContainer = document.getElementById("otroTipoContainer");
+  let otroTipoInput = document.getElementById("otroTipo");
   let reporteForm = document.getElementById("reporteForm");
   let imagenInput = document.getElementById("imagen");
   let previewImg = document.getElementById("previewImg");
 
   // oculta el campo de texto para "otros" al cargar la pagina y hace que no sea requerido, ademas de ocultar la imagen de preview
-  otraCategoriaContainer.style.display = "none";
-  otraCategoriaInput.required = false;
+  otroTipoContainer.style.display = "none";
+  otroTipoInput.required = false;
   previewImg.style.display = "none";
 
   //preview de la imagen
